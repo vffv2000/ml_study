@@ -32,7 +32,7 @@ data = '13 17 1 2 7 1 18 7 11 18 4 7 15 3 5 17 3 13 3 3 2 18 19 11 10'
 data = np.array([int(i) for i in data.split(" ")])
 n = int(len(data) ** 0.5)
 data = np.reshape(data, (n, n))
-df = pd.DataFrame(data = data)
+df = pd.DataFrame(data=data)
 
 # Your code here
 main_diagonal_sum = np.trace(df)
