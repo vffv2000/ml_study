@@ -22,3 +22,7 @@
 # dtype: int64
 
 import pandas as pd
+
+user_input = input("")
+ser = pd.Series(list(user_input))
+print(ser.value_counts(ascending=True))
