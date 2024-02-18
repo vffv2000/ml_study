@@ -1,31 +1,14 @@
-# Задача № 3. На вход подаются данные, из которых создается датафрейм такой структуры:
-#
-#
-#
-# Ваша задача вывести датафрейм поменьше, но только с яблоками(apple), и чтобы цена на это яблоко, была больше 10.
-#
-# Важные моменты:
-#
-# Ответ выведите с использованием конструкции: print(df)
-# Обратите внимание на индексы, нужно их переопределить, чтобы они начинались с нуля
-# Строки должны распологаться в том же порядке что и у оригинального датафрейма
-# Task No. 3. The input is data from which a dataframe of the following structure is created:
-#
-#
-#
-# Your task is to display a smaller dataframe, but only with apples, and so that the price of this apple is greater than 10.
-#
-# Important points:
-#
-# Print the answer using the construction: print(df)
-# Pay attention to the indexes, you need to redefine them so that they start from zero
-# Rows must be in the same order as the original dataframe
-# Sample Input:
-#
-# apple banana orange
-# 0.14 0.35 0.84 0.64 0.68 0.22 0.94 0.48 0.29
-# 12 6 11 2 3 12 7 19 7
-# Sample Output:
-#
-#    fruit  rating  price
-# 0  apple    0.14     12
+import numpy as np
+import pandas as pd
+
+# Обработка входных данных
+data = input()        
+data = data.split(" ")
+data = np.array(data).reshape(20, 2)
+df = pd.DataFrame(data=data, columns=["value1", "value2"], index=["obj_1", "obj_2"]*10)
+df = df.applymap(lambda x: np.nan if x == "nan" else float(x))
+
+# Your code here
+# Your code here
+# 33 65 nan 86 26 86 63 4 19 70 27 4 16 72 93 20 41 49 53 67 45 nan nan 69 89 nan 52 53 8 90 nan 2 3 nan 6 74 61 21 42 47
+print(df)
