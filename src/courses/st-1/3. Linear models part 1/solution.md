@@ -1,10 +1,15 @@
 **Шаг 1 (первичное улучшение вида данных)**
  - Переименовка столбцов(теперь короткие и отписывают то что нужно)
- - Получение данных о кол-ве записей![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/1.Data_Count.png)
- - Получение типов данных![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/2.Data_Types.png)
- - Получение описательной статистики ![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/3.Data_Statistics.png)
- - Проверка на наличие дубликатов ![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/4.Check_on_duplicates.png)
- - Получение данных о пропусках ![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/5.Check_on_Empty_Data.png)
+ - Получение данных о кол-ве записей
+![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/1.Data_Count.png)
+ - Получение типов данных
+![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/2.Data_Types.png)
+ - Получение описательной статистики
+![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/3.Data_Statistics.png)
+ - Проверка на наличие дубликатов
+![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/4.Check_on_duplicates.png)
+ - Получение данных о пропусках
+![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/5.Check_on_Empty_Data.png)
 
 **Шаг 2(колонки Salary и Amount of monetary compensation к единой шкале измерения - доллару)**
  - Получение всех записей, у которых значение currency не равно USD
@@ -13,13 +18,16 @@
  - С помощью апи получение курса валют
  - Преобразование сторонней валюты в USD 
  - Обновление данных
- - удаление поля currency и Currency special![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/6.Data_Statistics2.png)
+ - удаление поля currency и Currency special
+![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/6.Data_Statistics2.png)
 
 **Шаг 3(Приведите страны к единым названиям)**
  - В дата сете много дубликатов нужно привести к одному 'United States', 'US', 'USA' -> USA
- - С дата сетом были подготовлены массивы строк по ним и сделал преобразование![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/7.Check_on_Empty2.png)
+ - С дата сетом были подготовлены массивы строк по ним и сделал преобразование
+![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/7.Check_on_Empty2.png)
 
 **Шаг 4(Избавление от ненужно даты/пустых значений)**
  - Убрал поле state так как у нас множество стран и есть поле город(не нужная информация)
- - В пропуски по городам вставил сталицы от странн (лучше всего было получить штат если америка и взять самый большой город в штате)![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/8.Check_on_Empty3.png)
+ - В пропуски по городам вставил сталицы от странн (лучше всего было получить штат если америка и взять самый большой город в штате)
+![img.png](../../../../media/st-1/3.%20Linear%20models%20part%201/8.Check_on_Empty3.png)
  - Job context  и Income context   были удалены 
